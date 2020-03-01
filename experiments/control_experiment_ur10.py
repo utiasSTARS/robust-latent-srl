@@ -15,7 +15,7 @@ from multiprocessing import Process, Value, Manager
 
 from args.parser import parse_control_experiment_args
 from data_collection.storage import Storage
-from experiments.MPC import *
+from experiments.mpc import *
 from senseact.envs.real_sense.reacher_env_with_real_sense import ReacherEnvWithRealSense
 from srl.srl.networks import (FullyConvEncoderVAE,
                               FullyConvDecoderVAE,
