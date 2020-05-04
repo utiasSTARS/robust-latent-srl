@@ -2,7 +2,6 @@ import argparse
 
 from args.utils import str2bool, str2inttuple, str2tuple, str2floattuple
 
-
 def parse_common_training_args(parser=None):
     if parser is None:
         parser = argparse.ArgumentParser()

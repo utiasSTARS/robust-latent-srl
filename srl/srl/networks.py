@@ -4,6 +4,10 @@ import torch.nn as nn
 import torch.distributions as tdist
 import time
 
+class Flatten(nn.Module):
+    def forward(self, x):
+        return x.view(x.size(0), -1)
+    
 
 class FullyConvEncoderVAE(nn.Module):
     def __init__(self, input=1, latent_size=12, bn=True, extra_scalars=0, 
